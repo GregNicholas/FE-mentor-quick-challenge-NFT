@@ -1,0 +1,161 @@
+:root {
+  --vd-blue: hsl(217, 54%, 11%);
+  --d-blue: hsl(216, 50%, 16%);
+  --vd-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: sans-serif;
+  background: var(--vd-blue);
+  padding: 1rem;
+}
+
+p {
+  font-size: 1.125rem;
+}
+
+.attribution {
+  margin-top: 1rem;
+  font-size: 11px;
+  text-align: center;
+  color: var(--soft-blue);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  background-color: var(--d-blue);
+  padding: 2rem;
+  border-radius: 15px;
+  height: fit-content;
+  width: 340px;
+  margin: auto auto;
+  top: 50%;
+}
+
+.card-img-container {
+  position: relative;
+  margin-bottom: 1.8rem;
+  height: 340px;
+}
+
+.card img {
+  border-radius: 10px;
+  cursor: pointer;
+  height: 100%;
+}
+
+.card-img-overlay {
+  /* opacity: 0; */
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-img-overlay > img {
+  color: white;
+  opacity: 0;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.card-img-overlay:hover > img {
+  opacity: 1;
+}
+
+.card-img-overlay:hover {
+  background: hsla(178, 100%, 50%, 50%);
+}
+.card-title {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1.55rem;
+  margin-bottom: 1.2rem;
+  cursor: pointer;
+}
+.card-title:hover {
+  color: var(--cyan);
+}
+
+.card-info {
+  color: var(--soft-blue);
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.card-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  padding-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid var(--vd-blue-line);
+}
+
+.card-foot {
+  color: var(--soft-blue);
+  font-size: 1.1rem;
+  font-weight: 300;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.card-foot img {
+  width: 2.2rem;
+  display: inline;
+  vertical-align: center;
+  margin: 0 1rem 0 0;
+  border: 1px solid var(--soft-blue);
+  border-radius: 50%;
+}
+
+.card-foot .name {
+  color: var(--white);
+  margin-left: 0.4rem;
+  cursor: pointer;
+}
+.card-foot .name:hover {
+  color: var(--cyan);
+}
+
+.price {
+  color: var(--cyan);
+  font-weight: 400;
+}
+.price::before {
+  content: url("images/icon-ethereum.svg");
+  padding-right: 0.4rem;
+}
+.time {
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+.time::before {
+  content: url("images/icon-clock.svg");
+  padding-right: 0.4rem;
+}
