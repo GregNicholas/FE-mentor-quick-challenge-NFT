@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/GregNicholas/FE-mentor-quick-challenge-NFT)
-- Live Site URL: (https://csb-9piivo.netlify.app/)
+- Live Site URL: (https://csb-bu1urq.netlify.app/)
 
 ## My process
 
