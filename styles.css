@@ -32,6 +32,7 @@ p {
   font-size: 11px;
   text-align: center;
   color: var(--soft-blue);
+  transform: translateY(80px);
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -44,7 +45,12 @@ p {
   height: fit-content;
   width: 340px;
   margin: auto auto;
+  position: absolute;
   top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 
 .card-img-container {
